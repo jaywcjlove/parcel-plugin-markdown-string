@@ -1,6 +1,6 @@
-## Parcel plugin for loader markdown string
+## parcel-plugin-markdown-string
 
-A plugin for [Parcel.js](https://parceljs.org/) bundler that renders markdown files into React components using [react-markdown](https://github.com/rexxars/react-markdown).
+> [Parcel](https://parceljs.org/) plugin for loader markdown string.
 
 ### Use
 
