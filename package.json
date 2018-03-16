@@ -1,7 +1,7 @@
 {
   "name": "parcel-plugin-markdown-string",
-  "version": "1.2.0",
-  "description": "Parcel plugin for loader markdown string",
+  "version": "1.2.2",
+  "description": "Parcel plugin for loader markdown string.",
   "main": "index.js",
   "scripts": {
     "test": "rm -rf .cache && rm -rf dist && node test/index.js"
@@ -12,6 +12,10 @@
     "parcel-plugin",
     "markdown"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaywcjlove/parcel-plugin-markdown-string.git"
+  },
   "author": "kenny wong <wowohoo@qq.com>",
   "license": "MIT",
   "devDependencies": {
