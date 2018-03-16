@@ -14,6 +14,8 @@ Import your markdown files!
 
 ```js
 import MarkdownString from './Markdown.md';
+
+console.log(MarkdownString) // => Output markdown string.
 ```
 
 ### Test
