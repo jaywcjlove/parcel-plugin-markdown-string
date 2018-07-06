@@ -5,13 +5,11 @@ class MarkdownAsset extends Asset {
     this.type = 'js';
   }
   parse(markdownString) {
-    this.code = markdownString
-      .replace(/`/g, '\\`')
-      // .replace(/\n/g, '\\n');
+    this.code = markdownString;
   }
   generate() {
     // Send to JS bundler
-    return { 'js': `module.exports = \`${this.code}\`` };
+    return { 'js': `module.exports = ${JSON.stringify(this.code)}` };
   }
 }
 
