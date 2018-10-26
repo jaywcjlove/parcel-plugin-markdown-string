@@ -10,9 +10,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "marked": {
+    "breaks": true,
+    "pedantic": false,
+    "gfm": true,
+    "tables": true,
+    "sanitize": false,
+    "smartLists": true,
+    "smartypants": false,
+    "xhtml": false
+  },
   "devDependencies": {
-    "parcel-bundler": "^1.9.4",
-    "parcel-plugin-markdown-string": "^1.3.1",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-markdown-string": "^1.3.2",
     "posthtml-parser": "^0.4.1"
   }
 }

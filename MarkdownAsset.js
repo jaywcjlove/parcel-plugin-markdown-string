@@ -1,11 +1,18 @@
 const { Asset } = require('parcel-bundler');
+const marked = require('marked');
+
 class MarkdownAsset extends Asset {
-  constructor(name, pkg, options) {
-    super(name, pkg, options);
+  constructor(name, options) {
+    super(name, options);
     this.type = 'js';
   }
-  parse(markdownString) {
-    this.code = markdownString;
+  async parse(markdownString) {
+    const pkg = await this.resolver.findPackage(this.options.env.PWD);
+    if (pkg && pkg.marked) {
+      this.code = marked(markdownString, pkg.marked);
+    } else {
+      this.code = markdownString;
+    }
   }
   generate() {
     // Send to JS bundler

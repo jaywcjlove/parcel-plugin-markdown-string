@@ -1,2 +1,3 @@
-import md from '../../README.md';
-document.body.innerHTML = md.replace(/\n/g, '<br />');
+import html from '../../README.md';
+document.body.innerHTML = html;
+console.log('HTML=>', html)
