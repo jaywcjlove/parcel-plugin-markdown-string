@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.10.3",
-    "parcel-plugin-markdown-string": "^1.3.2",
+    "parcel-plugin-markdown-string": "file:../",
     "posthtml-parser": "^0.4.1"
   }
 }

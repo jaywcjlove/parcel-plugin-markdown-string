@@ -1,0 +1,7 @@
+.cache
+.gitignore
+parcel.log
+example
+dist
+test
+package-lock.json
