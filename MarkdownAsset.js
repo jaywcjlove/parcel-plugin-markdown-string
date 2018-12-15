@@ -7,7 +7,7 @@ class MarkdownAsset extends Asset {
     this.type = 'js';
   }
   async parse(markdownString) {
-    const pkg = await this.resolver.findPackage(this.options.env.PWD);
+    const pkg = await this.resolver.findPackage(process.cwd());
     if (pkg && pkg.marked) {
       this.code = marked(markdownString, pkg.marked);
     } else {
