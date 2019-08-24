@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "parcel-bundler": "^1.12.3"
   }
 }
