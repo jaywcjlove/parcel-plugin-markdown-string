@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-markdown-string",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Parcel plugin for loader markdown string.",
   "main": "index.js",
   "scripts": {
