@@ -12,6 +12,10 @@
     "parcel-plugin",
     "markdown"
   ],
+  "files": [
+    "index.js",
+    "MarkdownAsset.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jaywcjlove/parcel-plugin-markdown-string.git"
