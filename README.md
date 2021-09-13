@@ -1,5 +1,7 @@
 ## parcel-plugin-markdown-string
 
+[![parcel-plugin-markdown-string](https://img.shields.io/npm/dm/parcel-plugin-markdown-string.svg?style=flat)](https://www.npmjs.com/package/parcel-plugin-markdown-string)
+
 > [Parcel](https://parceljs.org/) plugin for loader markdown string.
 
 ### Use
