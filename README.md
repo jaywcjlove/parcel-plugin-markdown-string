@@ -54,7 +54,8 @@ document.body.innerHTML = HTMLStr;
 
 **Output Markdown string**
 
-```js .markedrc
+```js
+// .markedrc
 {
   "marked": false
 }
