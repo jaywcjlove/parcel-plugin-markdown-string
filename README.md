@@ -5,9 +5,9 @@ parcel-transformer-markdown
 [![Build & Deploy](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg)](https://www.npmjs.com/package/parcel-transformer-markdown)
 
-[Parcel 2](https://parceljs.org/) plugin for loader markdown string.  
+[**`Parcel 2`**](https://parceljs.org/) plugin for loader markdown string, markdown output HTML.
 
-> ⚠️ ~~[parcel-plugin-markdown-string](https://www.npmjs.com/package/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
+> ⚠️ ~~[`parcel-plugin-markdown-string`](https://www.npmjs.com/package/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
 
 ```diff
 - parcel-plugin-markdown-string 
@@ -66,7 +66,6 @@ import str from './Markdown.md';
 console.log(str) // => Output Markdown string.
 document.body.innerHTML = str;
 ```
-
 
 ## Configuration
 
