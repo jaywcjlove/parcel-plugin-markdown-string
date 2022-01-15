@@ -1,4 +1,9 @@
-node_modules
 .cache
+.parcel-cache
+package-lock.json
 parcel.log
+
+node_modules
 dist
+lib
+esm

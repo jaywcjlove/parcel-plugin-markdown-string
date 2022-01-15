@@ -1,30 +1,81 @@
-## parcel-plugin-markdown-string
+parcel-transformer-markdown
+===
 
-[![parcel-plugin-markdown-string](https://img.shields.io/npm/dm/parcel-plugin-markdown-string.svg?style=flat)](https://www.npmjs.com/package/parcel-plugin-markdown-string)
+[![parcel-transformer-markdown](https://img.shields.io/npm/dm/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
 
-> [Parcel](https://parceljs.org/) plugin for loader markdown string.
+[Parcel 2](https://parceljs.org/) plugin for loader markdown string.  
 
-### Use
+> ⚠️ ~~[parcel-plugin-markdown-string](https://www.npmjs.com/package/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
+
+```diff
+- parcel-plugin-markdown-string 
++ parcel-transformer-markdown
+```
+
+## Example usage
 
 Install the plugin
 
 ```bash
-npm install parcel-plugin-markdown-string --save-dev
+npm install parcel-transformer-markdown --save-dev
 ```
 
-Import your markdown files!
+`.parcelrc`
 
 ```js
-import MarkdownString from './Markdown.md';
-
-console.log(MarkdownString) // => Output markdown string.
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.md": [ "parcel-transformer-markdown" ]
+  }
+}
 ```
 
-If you want to convert directly to HTML, you need to set [marked](https://github.com/markedjs/marked) options in [package.json](example/package.json).
+`index.html`:
 
-```json
+```html
+<!DOCTYPE html>
+<div id="root"></div>
+<script type="module" src="index.js"></script>
+```
+
+**Output HTML string**
+
+Import your markdown files! Output HTML string.
+
+```js
+import HTMLStr from './Markdown.md';
+
+console.log(HTMLStr) // => Output HTML string.
+document.body.innerHTML = HTMLStr;
+```
+
+**Output Markdown string**
+
+```js .markedrc
 {
-  "name": "example",
+  "marked": false
+}
+```
+
+```js
+import str from './Markdown.md';
+
+console.log(str) // => Output Markdown string.
+document.body.innerHTML = str;
+```
+
+
+## Configuration
+
+[Marked](https://github.com/markedjs/marked) can be configured using a `.markedrc`, `.markedrc.js`, or `marked.config.js` file. See the [Marked API Reference](https://marked.js.org/using_advanced#options) for details on the available options.
+
+> Note: `.markedrc.js` and `marked.config.js` are supported for JavaScript-based configuration, but should be avoided when possible because they reduce the effectiveness of Parcel's caching. Use a JSON based configuration format (e.g. `.markedrc`) instead.
+
+There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise just read the `markdown` string.
+
+```js
+{
   "marked": {
     "breaks": true,
     "pedantic": false,
@@ -34,22 +85,10 @@ If you want to convert directly to HTML, you need to set [marked](https://github
     "smartLists": true,
     "smartypants": false,
     "xhtml": false
-    // ...
-  },
+  }
 }
 ```
 
-Import Markdown output HTML!
+## License
 
-```js
-import HTMLString from './Markdown.md';
-
-console.log(HTMLString) // => Output HTML string.
-document.body.innerHTML = html;
-```
-
-### Test
-
-```bash
-npm run test
-```
+MIT © [Kenny Wong](https://wangchujiang.com)

@@ -1,28 +1,19 @@
 {
   "name": "example",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development parcel src/index.html --out-dir dist/ --no-cache",
-    "build": "NODE_ENV=production parcel build src/index.html --out-dir dist/ --public-url ./ --no-cache"
+    "start": "rm -rf .parcel-cache && parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir doc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "marked": {
-    "breaks": true,
-    "pedantic": false,
-    "gfm": true,
-    "tables": true,
-    "sanitize": false,
-    "smartLists": true,
-    "smartypants": false,
-    "xhtml": false
-  },
   "devDependencies": {
-    "parcel-bundler": "^1.10.3",
-    "parcel-plugin-markdown-string": "file:../",
-    "posthtml-parser": "^0.4.1"
+    "parcel": "^2.2.0",
+    "parcel-transformer-markdown": "file:../",
+    "posthtml-parser": "^0.10.1"
   }
 }

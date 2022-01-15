@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "target": "es2017",
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": false,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "types": ["jest", "node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
