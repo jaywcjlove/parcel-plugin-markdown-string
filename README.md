@@ -7,7 +7,7 @@ parcel-transformer-markdown
 
 [**`Parcel 2`**](https://parceljs.org/) plugin for loader markdown string, markdown output HTML.
 
-> ⚠️ ~~[`parcel-plugin-markdown-string`](https://www.npmjs.com/package/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
+> ⚠️ ~~[`parcel-plugin-markdown-string`](https://github.com/jaywcjlove/parcel-plugin-markdown-string/tree/parcel-plugin-markdown-string)~~ => [`parcel-transformer-markdown`](https://www.npmjs.com/package/parcel-transformer-markdown)
 
 ```diff
 - parcel-plugin-markdown-string 
