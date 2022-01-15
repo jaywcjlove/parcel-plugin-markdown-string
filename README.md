@@ -1,7 +1,9 @@
 parcel-transformer-markdown
 ===
 
-[![parcel-transformer-markdown](https://img.shields.io/npm/jaywcjlove/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
+[![NPM Downloads](https://img.shields.io/npm/dm/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
+[![Build & Deploy](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg)](https://www.npmjs.com/package/parcel-transformer-markdown)
 
 [Parcel 2](https://parceljs.org/) plugin for loader markdown string.  
 
