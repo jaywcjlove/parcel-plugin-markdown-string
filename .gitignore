@@ -4,6 +4,7 @@ package-lock.json
 parcel.log
 
 node_modules
+build
 dist
 lib
 esm
