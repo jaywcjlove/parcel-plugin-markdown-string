@@ -26,18 +26,24 @@ export default new Transformer({
           smartypants: false,
           xhtml: false,
         },
+        html: false,
         ...conf.contents as any,
       };
     }
   },
   async transform({ asset, config }) {
     let code = await asset.getCode();
-    const option: { marked?: marked.MarkedOptions } = config || {};
+    const option: { marked?: marked.MarkedOptions, html?: Boolean } = config || {};
     if (option.marked) {
       code = marked.parse(code, { ...option.marked });
     }
-    asset.type = 'js';
-    asset.setCode(`export default ${JSON.stringify(code)}`);
+    if (option.html && option.marked) {
+      asset.type = 'html';
+      asset.setCode(code);
+    } else {
+      asset.type = 'js';
+      asset.setCode(`export default ${JSON.stringify(code)}`);
+    }
     return [asset];
   },
 });
