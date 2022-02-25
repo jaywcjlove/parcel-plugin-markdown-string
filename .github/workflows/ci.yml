@@ -16,6 +16,12 @@ jobs:
       - run: npm install
       - run: npm run build
 
+      - name: example test
+        working-directory: example
+        run: |
+          npm install
+          npm run build
+
       - run: npm i markdown-to-html-cli -g
       - run: mkdir build
       - run: markdown-to-html --output build/index.html
