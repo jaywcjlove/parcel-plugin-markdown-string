@@ -3,7 +3,8 @@ parcel-transformer-markdown
 
 [![NPM Downloads](https://img.shields.io/npm/dm/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
 [![Build & Deploy](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg)](https://www.npmjs.com/package/parcel-transformer-markdown)
+[![parcel-transformer-markdown version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg?label=parcel-transformer-markdown)](https://www.npmjs.com/package/parcel-transformer-markdown)
+[![parcel-plugin-markdown-string version](https://img.shields.io/npm/v/parcel-plugin-markdown-string.svg?label=parcel-plugin-markdown-string)](https://www.npmjs.com/package/parcel-plugin-markdown-string)
 
 [**`Parcel 2`**](https://parceljs.org/) plugin for loader markdown string, markdown output HTML.
 
@@ -90,6 +91,16 @@ There is a `marked` configuration that converts `markdown` to `HTML`. Otherwise 
   }
 }
 ```
+
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/jaywcjlove/parcel-plugin-markdown-string/graphs/contributors">
+  <img src="https://jaywcjlove.github.io/parcel-plugin-markdown-string/CONTRIBUTORS.svg" />
+</a>
+
+Made with [github-action-contributors](https://github.com/jaywcjlove/github-action-contributors).
 
 ## License
 
