@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "rm -rf .parcel-cache && parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir doc"
