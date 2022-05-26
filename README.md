@@ -46,6 +46,14 @@ npm install parcel-transformer-markdown --save-dev
 
 Import your markdown files! Output HTML string.
 
+
+```js
+// .markedrc
+{
+  "html": true
+}
+```
+
 ```js
 import HTMLStr from './Markdown.md';
 
