@@ -33,8 +33,8 @@
     "parcel": "^2.2.0"
   },
   "devDependencies": {
-    "@parcel/config-default": "^2.3.2",
-    "@parcel/core": "^2.3.2",
+    "@parcel/config-default": "2.6.2",
+    "@parcel/core": "2.6.2",
     "tsbb": "3.5.4"
   },
   "dependencies": {
