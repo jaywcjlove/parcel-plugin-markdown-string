@@ -4,12 +4,11 @@ import { marked } from 'marked';
 
 export default new Transformer({
   async loadConfig({ config }) {
-    // @ts-ignore
-    const conf = await config.getConfig([
+    const conf = await config.getConfig<{ marked: marked.MarkedOptions; html: boolean; }>([
       path.resolve('.markedrc'),
       path.resolve('.markedrc.js'),
       path.resolve('marked.config.js'),
-    ]);
+    ], {});
     if (conf) {
       let isJavascript = path.extname(conf.filePath) === '.js';
       if (isJavascript) {
@@ -27,7 +26,7 @@ export default new Transformer({
           xhtml: false,
         },
         html: false,
-        ...conf.contents as any,
+        ...conf.contents,
       };
     }
   },
