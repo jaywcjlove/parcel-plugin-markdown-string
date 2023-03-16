@@ -35,7 +35,7 @@
   "devDependencies": {
     "@parcel/config-default": "^2.3.2",
     "@parcel/core": "^2.3.2",
-    "tsbb": "3.7.6"
+    "tsbb": "3.7.9"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
