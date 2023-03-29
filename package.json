@@ -7,8 +7,8 @@
   "main": "./lib/index.js",
   "module": "./esm/index.js",
   "scripts": {
-    "watch": "tsbb watch",
-    "build": "tsbb build",
+    "watch": "tsbb watch src/*.ts --useBabel",
+    "build": "tsbb build src/*.ts --useBabel",
     "test": "rm -rf .parcel-cache && rm -rf dist && node test/index.cjs"
   },
   "keywords": [
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@parcel/config-default": "^2.3.2",
     "@parcel/core": "^2.3.2",
-    "tsbb": "3.7.6"
+    "tsbb": "^4.0.5"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
