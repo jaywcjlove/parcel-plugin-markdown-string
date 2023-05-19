@@ -20,6 +20,8 @@ export default new Transformer({
           pedantic: false,
           gfm: true,
           tables: true,
+          headerIds: false,
+          mangle: false,
           sanitize: false,
           smartLists: true,
           smartypants: false,

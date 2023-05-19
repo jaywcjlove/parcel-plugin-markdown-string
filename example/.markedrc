@@ -2,6 +2,8 @@
   "marked": {
     "breaks": true,
     "pedantic": false,
+    "mangle": false,
+    "headerIds": false,
     "gfm": true,
     "tables": true,
     "sanitize": false,
