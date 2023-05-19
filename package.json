@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-markdown",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "description": "Parcel plugin for loader markdown string & Markdown transformer.",
   "author": "kenny wong <wowohoo@qq.com>",
   "license": "MIT",
