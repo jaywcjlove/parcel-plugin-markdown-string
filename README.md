@@ -1,6 +1,7 @@
 parcel-transformer-markdown
 ===
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor)
 [![NPM Downloads](https://img.shields.io/npm/dm/parcel-transformer-markdown.svg?style=flat)](https://www.npmjs.com/package/parcel-transformer-markdown)
 [![Build & Deploy](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml/badge.svg)](https://github.com/jaywcjlove/parcel-plugin-markdown-string/actions/workflows/ci.yml)
 [![parcel-transformer-markdown version](https://img.shields.io/npm/v/parcel-transformer-markdown.svg?label=parcel-transformer-markdown)](https://www.npmjs.com/package/parcel-transformer-markdown)

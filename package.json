@@ -3,6 +3,8 @@
   "version": "3.0.0",
   "description": "Parcel plugin for loader markdown string & Markdown transformer.",
   "author": "kenny wong <wowohoo@qq.com>",
+  "homepage": "https://jaywcjlove.github.io/parcel-plugin-markdown-string",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
   "license": "MIT",
   "main": "./lib/index.js",
   "module": "./esm/index.js",
