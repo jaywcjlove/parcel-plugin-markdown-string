@@ -42,7 +42,7 @@
   "dependencies": {
     "@babel/runtime": "^7.16.7",
     "@parcel/plugin": "^2.2.0",
-    "@types/marked": "^5.0.0",
+    "@types/marked": "^6.0.0",
     "marked": "^5.0.0"
   },
   "engines": {
